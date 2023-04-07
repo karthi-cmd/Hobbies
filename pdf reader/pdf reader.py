@@ -1,7 +1,7 @@
 import pyttsx3
 import PyPDF2
-book=open("CA 2 Marks Unit II.pdf",'rb')
-pdfReader=PyPDF2.PdfFileReader(book)
+book=open("pdf reader\CA 2 Marks Unit II.pdf",'rb')
+pdfReader=PyPDF2.PdfFileReader(book,strict=False)
 pages=pdfReader.numPages
 speaker=pyttsx3.init()
 for num in range(100,pages):
